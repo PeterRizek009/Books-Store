@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" />
+  <link rel="stylesheet" href="CSS/library.css" />
+  <link rel="stylesheet" href="CSS/bootstrap.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+  <title>Books Library Project</title>
+</head>
+
+<body>
+  <header>
+    <!-- navbar  -->
+    <nav class="nav-header" id="navbar">
+      <div class="menu-btn" onclick="openNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="logo">
+        <img src="favicon_io/favicon.ico" alt="" />
+      </div>
+      <div class="icons">
+        <i class="fa fa-cog"></i>
+        <i class="fa fa-search"></i>
+        <i class="fa fa-user-circle"></i>
+      </div>
+    </nav>
+    <!-- end of navbar  -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img id="img1" />
+          <div class="img-text">
+            <h1>Alex Library</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+              minus minima similique error ad inventore quia perferendis
+              corrupti, eligendi doloribus.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="img2" />
+          <div class="img-text">
+            <h1>Alex Library</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+              minus minima similique error ad inventore quia perferendis
+              corrupti, eligendi doloribus.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Pics/img3.jpg" id="img3" />
+          <div class="img-text">
+            <h1>Alex Library</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+              minus minima similique error ad inventore quia perferendis
+              corrupti, eligendi doloribus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- next and previous buttons  -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </header>
+  <!-- End of header  -->
+
+  <!-- section of Novel books  -->
+  <section class="books">
+    <div class="container" id="novels">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Novels <b>Books</b></h2>
+          <!-- end of titles -->
+          <div id="BooksCarousel" class="carousel slide" data-bs-ride="BooksCarousel">
+            <!-- carousel-indicators -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#BooksCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#BooksCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#BooksCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- end of carousel-indicators -->
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/book1.jpg" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 1</h4>
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/book2.jpg" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 2</h4>
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/book3.jpg" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 3</h4>
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/book8.jpg" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 4</h4>
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/novel1.jpg" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 5</h4>
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/novel3.jpg" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 6</h4>
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/novel1.jpg" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 1</h4>
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/book7.jfif" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 1</h4>
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/novel1.jpg" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 1</h4>
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/book2.jpg" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 1</h4>
+
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/book2.jpg" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 1</h4>
+
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="Pics/Books/novel1.jpg" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Book 1</h4>
+
+                        <p class="item-price">
+                          <strike>$400.00</strike> <span>$369.00</span>
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#BooksCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#BooksCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of novel books  -->
+  <section class="Scicence-books">
+    <div class="container" id="Scicence">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Scicence <b>Books</b></h2>
+        </div>
+        <div class="sci-books">
+          <div class="book">
+            <img src="Pics/Books/novel1.jpg" alt="" />
+            <div class="thumb-content">
+              <h4>Book Name</h4>
+              <p class="item-price">
+                <strike>$400.00</strike> <span>$369.00</span>
+              </p>
+            </div>
+          </div>
+          <div class="book">
+            <img src="Pics/Books/book1.jpg" alt="" />
+            <div class="thumb-content">
+              <h4>Book Name</h4>
+              <p class="item-price">
+                <strike>$400.00</strike> <span>$369.00</span>
+              </p>
+            </div>
+          </div>
+          <div class="book">
+            <img src="Pics/Books/book2.jpg" alt="" />
+            <div class="thumb-content">
+              <h4>Book Name</h4>
+              <p class="item-price">
+                <strike>$400.00</strike> <span>$369.00</span>
+              </p>
+            </div>
+          </div>
+          <div class="book">
+            <img src="Pics/Books/book4.jfif" alt="" />
+            <div class="thumb-content">
+              <h4>Book Name</h4>
+              <p class="item-price">
+                <strike>$400.00</strike> <span>$369.00</span>
+              </p>
+            </div>
+          </div>
+          <div class="book">
+            <img src="Pics/Books/book5.jfif" alt="" />
+            <div class="thumb-content">
+              <h4>Book Name</h4>
+              <p class="item-price">
+                <strike>$400.00</strike> <span>$369.00</span>
+              </p>
+            </div>
+          </div>
+          <div class="book">
+            <img src="Pics/Books/book3.jpg" alt="" />
+            <div class="thumb-content">
+              <h4>Book Name</h4>
+              <p class="item-price">
+               <span>$369.00</span>
+              </p>
+            </div>
+          </div>
+          <div class="book">
+            <img src="Pics/Books/novel1.jpg" alt="" />
+            <div class="thumb-content">
+              <h4>Book Name</h4>
+              <p class="item-price">
+                 <span>$369.00</span>
+              </p>
+            </div>
+          </div>
+          <div class="book">
+            <img src="Pics/Books/book8.jpg" alt="" />
+            <div class="thumb-content">
+              <h4>Book Name</h4>
+              <p class="item-price">
+                 <span>$369.00</span>
+              </p>
+            </div>
+          </div>
+          <div class="book">
+            <img src="Pics/Books/book3.jpg" alt="" />
+            <div class="thumb-content">
+              <h4>Book Name</h4>
+              <p class="item-price">
+              <span>$369.00</span>
+              </p>
+            </div>
+          </div>
+          <div class="book">
+            <img src="Pics/Books/novel1.jpg" alt="" />
+            <div class="thumb-content">
+              <h4>Book Name</h4>
+              <p class="item-price">
+                <strike>$400.00</strike> <span>$369.00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="seemore.html">See all</a>
+      </div>
+    </div>
+  </section>
+  <!-- end of Novel books section  -->
+
+  <!-- Footer -->
+
+  <script src="JS/library.js"></script>
+  <script src="JS/jquery-3.6.0.min.js"></script>
+  <script src="JS/bootstrap.bundle.js"></script>
+</body>
+
+</html>

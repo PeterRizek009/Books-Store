@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+/* start of header */
+.nav-header {
+  background-color: transparent;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.sticky {
+  background-color: #122d3f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+}
+.menu-btn {
+  cursor: pointer;
+  align-self: center;
+  padding-left: 30px;
+  cursor: pointer;
+  transition: 0.3s background-color ease-in-out;
+}
+.bar1,
+.bar2,
+.bar3 {
+  height: 4px;
+  width: 40px;
+  background-color: #f5f5f5;
+  margin: 8px 0;
+}
+
+.menu-btn:hover .bar1 .bar2 .bar3 {
+  background-color: #d4b188;
+}
+.icons {
+  padding-right: 30px;
+}
+.icons .fa {
+  font-size: 28px;
+  color: #f5f5f5;
+  padding-left: 30px;
+  cursor: pointer;
+  transition: 0.3s color ease-in-out;
+}
+
+.icons .fa:hover {
+  color: #c44e00;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+}
+
+.carousel-item #img1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url(img1.jpg);
+}
+
+.carousel-item #img2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(img4.jpg);
+}
+.carousel-item #img3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(img3.jpg);
+}
+.carousel-item .img-text {
+  font-family: cursive;
+  position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1;
+  top: 0;
+  margin-top: 250px;
+  margin-left: 120px;
+}
+
+.img-text h1,
+p {
+  color: #f5f5f5;
+  padding-bottom: 20px;
+}
+
+.img-text h1 {
+  text-transform: uppercase;
+}
+
+.img-text p {
+  width: 50%;
+  font-size: 1.5rem;
+  line-height: 0.9;
+}
+/* end of header */
+/* Books sections  */
+section {
+  padding-bottom: 20px;
+}
+
+/* novels */
+section h2 {
+  color: #457b9d;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin: 60px 0 80px;
+}
+
+section h2 b {
+  color: #08023d;
+}
+
+section h2::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.2);
+  left: 0;
+  right: 0;
+  bottom: -20px;
+}
+/* Section */
+
+/* carousel */
+#BooksCarousel {
+  margin: 50px auto;
+  padding: 0 20px;
+}
+#BooksCarousel .carousel-indicators button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+}
+
+#BooksCarousel .carousel-item {
+  min-height: 330px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#BooksCarousel .carousel-item .img-box {
+  height: 180px;
+  width: 100%;
+  position: relative;
+}
+
+#BooksCarousel .carousel-item img {
+  max-width: 60%;
+  max-height: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  padding: 2px;
+  box-shadow: 29px 40px 80px rgba(0, 0, 0, 0.07);
+}
+
+#BooksCarousel .carousel-item h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#BooksCarousel .carousel-item .btn {
+  color: #333;
+  border-radius: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin-top: 5px;
+  line-height: 16px;
+}
+
+#BooksCarousel .carousel-item .btn:hover,
+#BooksCarousel .carousel-item .btn:focus {
+  color: #fff;
+  background: #000;
+  border-color: #000;
+  box-shadow: none;
+}
+
+#BooksCarousel .carousel-item .btn i {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+#BooksCarousel .thumb-wrapper {
+  text-align: center;
+}
+
+#BooksCarousel .thumb-content {
+  padding: 15px;
+}
+
+#BooksCarousel .carousel-control-prev-icon,
+#BooksCarousel .carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #740404;
+  border-radius: 75%;
+  background-size: 50% 50%;
+}
+#BooksCarousel .item-price {
+  font-size: 13px;
+  padding: 2px 0;
+}
+
+#BooksCarousel .item-price strike {
+  color: #999;
+  margin-right: 5px;
+}
+
+#BooksCarousel .item-price span {
+  color: #86bd57;
+  font-size: 110%;
+}
+
+#BooksCarousel .carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  border-radius: 50%;
+  border-color: transparent;
+}
+
+.carousel-indicators li {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-indicators li.active {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.star-rating li {
+  padding: 0;
+}
+
+.star-rating i {
+  font-size: 14px;
+  color: #ffc000;
+}
+/* end of novels */
+
+/* start of science  */
+.Scicence-books {
+  background-color: rgb(235, 235, 235);
+}
+.Scicence-books .sci-books {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0 140px;
+}
+
+.Scicence-books .book {
+  padding:0 8px;
+  text-align: center;
+  transition: 0.2s display ease-in-out;
+}
+
+
+.Scicence-books .book img {
+  border: 2px solid #08023d;
+  padding: 4px;
+  max-width: 160px;
+  cursor: pointer;
+  transition: 0.2s transform ease-in-out;
+}
+
+.Scicence-books .book img:hover {
+  transform: scale(1.02);
+  opacity: 0.2;
+}
+
+.Scicence-books .book .thumb-content {
+  margin-top: 5px;
+}
+.Scicence-books .book .thumb-content h4{
+  color: #457b9d;
+  font-family: 'Sansita Swashed', cursive;
+}
+.Scicence-books .book .thumb-content .item-price strike{
+  color: #313335;
+  
+}
+.Scicence-books .book .thumb-content .item-price span{
+  color: #00b90f;
+  
+}
+
+.Scicence-books a {
+  color: #999;
+  position: relative;
+  text-decoration: none;
+  text-align: right;
+  right: 180px;
+  bottom: 30px;
+  font-size:20px;
+  transition: 0.2s  text-decoration ease-in-out;
+}
+
+.Scicence-books a:hover {
+  text-decoration: underline;
+  color: #999;
+}
+@media screen and (max-width: 992px) {
+  .Scicence-books .sci-books {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 60px;
+  }
+  .Scicence-books a {
+    right: 100px;
+  }
+}
+
+
+
+/* end of science  */
