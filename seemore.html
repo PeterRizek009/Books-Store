@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" />
   <link rel="stylesheet" href="CSS/library.css" />
+  <link rel="stylesheet" href="CSS/seeall.css" />
   <link rel="stylesheet" href="CSS/bootstrap.css" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
   <title>Books Library Project</title>
@@ -16,11 +17,19 @@
   <header>
     <!-- navbar  -->
     <nav class="nav-header" id="navbar">
-      <div class="menu-btn" onclick="openNav()">
+      <div class="menu-btn" id="menuBtn">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+      <i class="far fa-window-close" id="close"></i>
+      <ul class="linksTop" id="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="seemore.html">Books</a></li>
+        <li><a href="">New Books</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Contact us</a></li>
+      </ul>
       <div class="logo">
         <img src="favicon_io/favicon.ico" alt="" />
       </div>
@@ -30,9 +39,9 @@
         <i class="fa fa-user-circle"></i>
       </div>
     </nav>
-    <!-- end of navbar  -->
   </header>
   <!-- End of header  -->
+
 
   <section class="Scicence-books">
     <div class="container" id="Scicence">

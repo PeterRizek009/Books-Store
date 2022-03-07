@@ -16,11 +16,19 @@
   <header>
     <!-- navbar  -->
     <nav class="nav-header" id="navbar">
-      <div class="menu-btn" onclick="openNav()">
+      <div class="menu-btn" id="menuBtn">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+      <i class="far fa-window-close" id="close"></i>
+      <ul class="linksTop" id="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="seemore.html">Books</a></li>
+        <li><a href="">New Books</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Contact us</a></li>
+      </ul>
       <div class="logo">
         <img src="favicon_io/favicon.ico" alt="" />
       </div>
@@ -30,6 +38,7 @@
         <i class="fa fa-user-circle"></i>
       </div>
     </nav>
+
     <!-- end of navbar  -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -590,7 +599,7 @@
             <div class="thumb-content">
               <h4>Book Name</h4>
               <p class="item-price">
-               <span>$369.00</span>
+                <span>$369.00</span>
               </p>
             </div>
           </div>
@@ -599,7 +608,7 @@
             <div class="thumb-content">
               <h4>Book Name</h4>
               <p class="item-price">
-                 <span>$369.00</span>
+                <span>$369.00</span>
               </p>
             </div>
           </div>
@@ -608,7 +617,7 @@
             <div class="thumb-content">
               <h4>Book Name</h4>
               <p class="item-price">
-                 <span>$369.00</span>
+                <span>$369.00</span>
               </p>
             </div>
           </div>
@@ -617,7 +626,7 @@
             <div class="thumb-content">
               <h4>Book Name</h4>
               <p class="item-price">
-              <span>$369.00</span>
+                <span>$369.00</span>
               </p>
             </div>
           </div>
@@ -638,7 +647,45 @@
   <!-- end of Novel books section  -->
 
   <!-- Footer -->
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+  <div class="container-fluid p-0">
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->  
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+              class="fab fa-facebook-f"></i></a>
 
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+              class="fab fa-linkedin-in"></i></a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Peter Rizek</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>
   <script src="JS/library.js"></script>
   <script src="JS/jquery-3.6.0.min.js"></script>
   <script src="JS/bootstrap.bundle.js"></script>
