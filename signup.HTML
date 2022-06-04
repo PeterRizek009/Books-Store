@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" />
+  <link rel="stylesheet" href="CSS/library.css" />
+  <link rel="stylesheet" href="CSS/seeall.css" />
+  <link rel="stylesheet" href="CSS/signup.css" />
+  <link rel="stylesheet" href="CSS/bootstrap.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+  <title>Books Library Project</title>
+</head>
+
+<body>
+  <!-- section of signup -->
+  <section>
+    <div class="close-btn" id="closeSignPage">
+     <a href="index.html"><i class="fa fa-times" id="close"></i></a> 
+    </div>
+    <div class="sign-Box">
+      <div class="imgColumn" id="imgBox"></div>
+      <div class="myform">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-sm-6">
+            <input type="text" placeholder="First name" class="form-control" id="validationCustom01" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <input type="text"  placeholder="Last name" class="form-control" id="validationCustom02" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <input type="text" placeholder="email address" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <input type="password" placeholder="Password" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <input type="password" placeholder="Retype Password" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-dark" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--end of  section of signup -->
+</body>
+
+
+
+<script src="JS/library.js"></script>
+<script src="JS/jquery-3.6.0.min.js"></script>
+<script src="JS/bootstrap.bundle.js"></script>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+    />
+    <link rel="stylesheet" href="CSS/additem.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <title>Books Library Project</title>
+  </head>
+
+  <body>
+    <!-- section of signup -->
+    <section class="add-item">
+      <div class="container">
+        <!-- Books Details  -->
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="input">
+              <label for="bookName">Book Name</label>
+              <input
+                type="text"
+                value=""
+                autocomplete="off"
+                id="bookName"
+                required
+              />
+            </div>
+
+            <div class="input">
+              <label for="bookPrice">Book Price</label>
+              <input
+                type="text"
+                value=""
+                autocomplete="off"
+                id="bookPrice"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="uploadFile">Book Image</label>
+              <input
+                type="file"
+                value=""
+                autocomplete="off"
+                id="uploadFile"
+                required
+              />
+            </div>
+            <button
+              type="button"
+              id="addBtn"
+              class="btn btn-outline-dark addBtn"
+            >
+              Add new
+            </button>
+          </div>
+          <!-- add new book by admin  -->
+        </div>
+      </div>
+    </section>
+    <!--end of  section of signup -->
+    <section>
+      <table class="table" id="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Book name</th>
+            <th scope="col">Book Price</th>
+            <th scope="col">Book image url</th>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>deafult</td>
+            <td>deafult</td>
+            <td>deafult</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </body>
+  <script src="JS/admin.js"></script>
+  <script src="JS/bootstrap.bundle.js"></script>
+</html>

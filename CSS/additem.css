@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(212, 211, 211);
+}
+
+.container {
+  margin: 40px auto;
+}
+
+.input {
+  margin-bottom: 40px;
+}
+
+#addBtn {
+  margin-left: auto;
+}
+
+
+table{
+  max-width: 60%;
+  margin: 0 auto;
+}

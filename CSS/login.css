@@ -1,0 +1,13 @@
+.sign-Box {
+  min-width: 50%;
+  min-height: 60%;
+}
+
+.myform {
+  margin: auto 0;
+  padding-left: 60px;
+}
+
+.myform div {
+  padding: 10px;
+}
